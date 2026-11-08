@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Web Development, SEO &amp; Ads Agency | Get a Free Consultation</title>
+<meta name="description" content="We build fast websites and run SEO, Meta Ads and Google Ads that bring you real leads. Get a free consultation today.">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WFP2PC7W');</script>
+<!-- End Google Tag Manager -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --paper:#FAF9F5; --ink:#101C2C; --muted:#56606E; --line:#E3E1D8;
+  --blue:#2346F0; --blue-dark:#1A35C0; --sun:#FFB61F; --card:#FFFFFF; --deep:#0C1626;
+  --display:'Bricolage Grotesque','Segoe UI',system-ui,sans-serif;
+  --body:'DM Sans','Segoe UI',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:var(--body);background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1120px,92%);margin-inline:auto}
+
+/* Header */
+header{position:sticky;top:0;z-index:20;background:rgba(250,249,245,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-family:var(--display);font-weight:800;font-size:1.35rem;text-decoration:none;letter-spacing:-.02em}
+.logo b{color:var(--blue)}
+.nav ul{display:flex;gap:28px;list-style:none;align-items:center}
+.nav a.link{text-decoration:none;font-weight:500;color:var(--muted)}
+.nav a.link:hover{color:var(--ink)}
+.btn{display:inline-block;border:0;cursor:pointer;font:600 1rem var(--body);text-decoration:none;padding:14px 26px;border-radius:10px;background:var(--sun);color:var(--ink);transition:transform .15s,background .15s}
+.btn:hover{background:#ffc447;transform:translateY(-2px)}
+.btn.blue{background:var(--blue);color:#fff}
+.btn.blue:hover{background:var(--blue-dark)}
+.btn.sm{padding:10px 18px;font-size:.95rem}
+.menu-btn{display:none;background:none;border:0;font-size:1.6rem;cursor:pointer;color:var(--ink)}
+
+/* Hero */
+.hero{padding:84px 0 72px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(2.4rem,5.4vw,4.1rem);line-height:1.04;letter-spacing:-.03em}
+.hero p.lead{margin:22px 0 32px;font-size:1.15rem;color:var(--muted);max-width:52ch}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.hero-note{font-size:.92rem;color:var(--muted)}
+
+/* Pipeline panel (hero focal element) */
+.panel{background:var(--deep);color:#fff;border-radius:20px;padding:28px;box-shadow:0 30px 60px -30px rgba(12,22,38,.55)}
+.panel h2{font-family:var(--display);font-size:1.05rem;font-weight:600;color:#B9C3D4;margin-bottom:18px}
+.row{display:flex;align-items:center;gap:14px;padding:14px 0;border-top:1px solid rgba(255,255,255,.1)}
+.row:first-of-type{border-top:0}
+.row .tag{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;background:rgba(255,255,255,.08);flex:none}
+.row strong{display:block;font-weight:600}
+.row span{font-size:.88rem;color:#9FAABD}
+.row .bar{margin-left:auto;width:70px;height:6px;border-radius:6px;background:rgba(255,255,255,.12);overflow:hidden;flex:none}
+.row .bar i{display:block;height:100%;background:var(--sun);border-radius:6px}
+
+/* Sections */
+section{padding:84px 0}
+.sec-head{max-width:640px;margin-bottom:44px}
+h2.title{font-family:var(--display);font-weight:700;font-size:clamp(1.9rem,3.6vw,2.7rem);line-height:1.1;letter-spacing:-.025em}
+.sec-head p{margin-top:14px;color:var(--muted);font-size:1.08rem}
+
+.services{background:#fff;border-block:1px solid var(--line)}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{padding:28px 24px;border:1px solid var(--line);border-radius:16px;background:var(--paper);transition:border-color .2s,transform .2s}
+.card:hover{border-color:var(--blue);transform:translateY(-4px)}
+.ico{width:48px;height:48px;border-radius:12px;display:grid;place-items:center;background:var(--blue);color:#fff;margin-bottom:20px}
+.card h3{font-family:var(--display);font-size:1.25rem;margin-bottom:8px}
+.card p{color:var(--muted);font-size:.98rem}
+.card a{display:inline-block;margin-top:16px;font-weight:600;color:var(--blue);text-decoration:none}
+.card a:hover{text-decoration:underline}
+
+/* Process */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:s;list-style:none}
+.steps li{counter-increment:s;padding-top:18px;border-top:3px solid var(--ink)}
+.steps li::before{content:"Step " counter(s);font-size:.85rem;font-weight:600;color:var(--blue)}
+.steps h3{font-family:var(--display);margin:6px 0;font-size:1.15rem}
+.steps p{color:var(--muted);font-size:.96rem}
+
+/* Contact */
+.contact{background:var(--deep);color:#fff}
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.contact .sec-head p{color:#B9C3D4}
+.perks{list-style:none;margin-top:28px;display:grid;gap:14px}
+.perks li{display:flex;gap:12px;color:#D6DCE8}
+.perks svg{flex:none;color:var(--sun);margin-top:3px}
+form{background:#fff;color:var(--ink);padding:32px;border-radius:20px;display:grid;gap:18px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+label{display:block;font-weight:600;font-size:.92rem;margin-bottom:6px}
+input,select,textarea{width:100%;font:inherit;padding:13px 14px;border:1.5px solid #CBD0D9;border-radius:10px;background:#fff;color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(35,70,240,.18)}
+textarea{min-height:120px;resize:vertical}
+.hp{position:absolute;left:-9999px;opacity:0;height:0;width:0}
+#form-status{min-height:1.4em;font-weight:500;font-size:.98rem}
+#form-status.ok{color:#0B7A43}
+#form-status.err{color:#B3261E}
+form .btn{width:100%;padding:16px}
+form .btn:disabled{opacity:.65;cursor:wait;transform:none}
+
+footer{padding:28px 0;font-size:.92rem;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+/* Responsive */
+@media(max-width:960px){
+  .hero-grid,.contact-grid{grid-template-columns:1fr}
+  .cards,.steps{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:720px){
+  .menu-btn{display:block}
+  .nav ul{display:none;position:absolute;top:68px;left:0;right:0;flex-direction:column;align-items:flex-start;gap:0;background:var(--paper);border-bottom:1px solid var(--line);padding:8px 4%}
+  .nav ul.open{display:flex}
+  .nav ul li{width:100%;padding:12px 0;border-top:1px solid var(--line)}
+  .nav ul li:first-child{border-top:0}
+  .hero{padding:48px 0}
+  section{padding:60px 0}
+  .cards,.steps,.two{grid-template-columns:1fr}
+  form{padding:22px}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WFP2PC7W" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header>
+  <div class="wrap nav">
+    <a href="#home" class="logo">Growth<b>Forge</b></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    <ul id="menu">
+      <li><a class="link" href="#home">Home</a></li>
+      <li><a class="link" href="#services">Services</a></li>
+      <li><a class="link" href="#process">How we work</a></li>
+      <li><a class="btn sm blue" href="#contact">Get a Free Consultation</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<!-- HOME -->
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Websites and ads that turn clicks into customers.</h1>
+      <p class="lead">We build fast, conversion-focused websites and run SEO, Meta Ads and Google Ads campaigns that bring qualified leads to your inbox, not just traffic to your site.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn" data-scroll="contact">Get a Free Consultation</a>
+        <span class="hero-note">Free audit. Reply within 24 hours.</span>
+      </div>
+    </div>
+    <aside class="panel" aria-label="What we manage">
+      <h2>One team, every channel that brings leads</h2>
+      <div class="row"><div class="tag"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg></div><div><strong>Website</strong><span>Loads in under 2 seconds</span></div><div class="bar"><i style="width:90%"></i></div></div>
+      <div class="row"><div class="tag"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div><div><strong>SEO</strong><span>Rank for buyer-intent searches</span></div><div class="bar"><i style="width:72%"></i></div></div>
+      <div class="row"><div class="tag"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11v2a1 1 0 001 1h2l5 4V6L6 10H4a1 1 0 00-1 1zM16 8a5 5 0 010 8"/></svg></div><div><strong>Meta Ads</strong><span>Facebook and Instagram leads</span></div><div class="bar"><i style="width:80%"></i></div></div>
+      <div class="row"><div class="tag"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"/></svg></div><div><strong>Google Ads</strong><span>Capture people ready to buy</span></div><div class="bar"><i style="width:85%"></i></div></div>
+    </aside>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="title">Everything you need to get found and get leads</h2>
+      <p>Pick one service or let us run the full funnel. Every project starts with your goals and ends with numbers you can see.</p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg></div>
+        <h3>Web Development</h3>
+        <p>Responsive, fast and secure websites built to convert visitors into enquiries.</p>
+        <a href="#contact" data-service="Web Development">Get a quote</a>
+      </article>
+      <article class="card">
+        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
+        <h3>SEO</h3>
+        <p>Technical fixes, content and link building that lift your rankings month after month.</p>
+        <a href="#contact" data-service="SEO">Get a quote</a>
+      </article>
+      <article class="card">
+        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11v2a1 1 0 001 1h2l5 4V6L6 10H4a1 1 0 00-1 1zM16 8a5 5 0 010 8"/></svg></div>
+        <h3>Meta Ads</h3>
+        <p>Facebook and Instagram campaigns with sharp targeting, fresh creative and lower cost per lead.</p>
+        <a href="#contact" data-service="Meta Ads">Get a quote</a>
+      </article>
+      <article class="card">
+        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"/></svg></div>
+        <h3>Google Ads</h3>
+        <p>Search and Display campaigns that put you in front of people already looking for you.</p>
+        <a href="#contact" data-service="Google Ads">Get a quote</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="title">How we work with you</h2>
+    </div>
+    <ol class="steps">
+      <li><h3>Free consultation</h3><p>Tell us about your business, goals and budget.</p></li>
+      <li><h3>Plan and proposal</h3><p>You get a clear scope, timeline and price. No surprises.</p></li>
+      <li><h3>Build and launch</h3><p>We create your site or campaigns and set up tracking.</p></li>
+      <li><h3>Measure and improve</h3><p>Regular reports and ongoing optimisation to grow results.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="sec-head">
+      <h2 class="title">Get your free consultation</h2>
+      <p>Share a few details and we will reply with ideas for your business within 24 hours.</p>
+      <ul class="perks">
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Free review of your website and ads</li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Clear pricing with no long contracts</li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Reply by email or WhatsApp</li>
+      </ul>
+    </div>
+
+    <!-- LEAD FORM (Web3Forms) -->
+    <form id="wp-form" name="lead_form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+      <input type="hidden" name="access_key" value="4831d82c-1718-4a58-96d9-436787e43b0a">
+      <input type="hidden" name="subject" value="New lead from your website">
+      <input type="hidden" name="from_name" value="Website Lead Form">
+      <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <div class="two">
+        <div><label for="name">Name</label><input id="name" type="text" name="name" autocomplete="name" required></div>
+        <div><label for="email">Email</label><input id="email" type="email" name="email" autocomplete="email" required></div>
+      </div>
+      <div class="two">
+        <div><label for="phone">WhatsApp / Phone number</label><input id="phone" type="tel" name="phone" autocomplete="tel" placeholder="+880 1XXX-XXXXXX" required></div>
+        <div>
+          <label for="service">Service required</label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>Select a service</option>
+            <option>Web Development</option>
+            <option>SEO</option>
+            <option>Meta Ads</option>
+            <option>Google Ads</option>
+            <option>Full digital marketing package</option>
+          </select>
+        </div>
+      </div>
+      <div><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell us about your business and goals" required></textarea></div>
+      <p id="form-status" role="status" aria-live="polite"></p>
+      <button type="submit" class="btn blue">Send my request</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="yr"></span> GrowthForge. All rights reserved.</span>
+    <span>Web Development &bull; SEO &bull; Meta Ads &bull; Google Ads</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  window.dataLayer = window.dataLayer || [];
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Mobile menu
+  var menu = document.getElementById('menu'), mb = document.getElementById('menuBtn');
+  mb.addEventListener('click', function(){
+    var open = menu.classList.toggle('open');
+    mb.setAttribute('aria-expanded', open);
+  });
+  menu.addEventListener('click', function(e){ if(e.target.tagName === 'A') menu.classList.remove('open'); });
+
+  // Service card links pre-select the dropdown
+  document.querySelectorAll('[data-service]').forEach(function(a){
+    a.addEventListener('click', function(){ document.getElementById('service').value = a.dataset.service; });
+  });
+
+  // Lead form -> Web3Forms
+  var form = document.getElementById('wp-form');
+  var btn = form.querySelector('button[type="submit"]');
+  var status = document.getElementById('form-status');
+
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    status.className = ''; status.textContent = '';
+    if(!form.checkValidity()){ form.reportValidity(); return; }
+
+    var original = btn.textContent;
+    btn.textContent = 'Sending...'; btn.disabled = true;
+
+    try {
+      var res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } });
+      var data = await res.json();
+      if(res.ok && data.success){
+        status.className = 'ok';
+        status.textContent = 'Thank you! Your request has been sent. We will contact you shortly.';
+        window.dataLayer.push({ event: 'lead_form_submit', form_id: 'wp-form', service: form.service.value });
+        form.reset();
+      } else {
+        status.className = 'err';
+        status.textContent = 'Error: ' + (data.message || 'Please check your details and try again.');
+      }
+    } catch(err){
+      status.className = 'err';
+      status.textContent = 'Something went wrong. Please check your connection and try again.';
+    } finally {
+      btn.textContent = original; btn.disabled = false;
+    }
+  });
+})();
+</script>
+</body>
+</html>
